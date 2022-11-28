@@ -15,7 +15,6 @@ public class App {
 		int[] lotteryArray = new int[ slots ];
 		int randomNumber;
 		boolean isRepeated;
-				
 		
 		// 6 mal die Schleife durchlaufen
 		for ( int indexDrawn = 0; indexDrawn < slots; indexDrawn++ ) {
@@ -45,17 +44,8 @@ public class App {
 		for (int i = 0; i<slots; i++) {
 			System.out.print( "\t" + App.c( "#g" ) + lotteryArray[ i ] + " " );
 		}
-		
 	}
 
-	// standart Methode
-		private static void output( String outStr ) {
-			System.out.println( outStr );
-		}
-	// überladene Methode
-		private static void output( char outChar ) {
-			System.out.print( outChar );
-		}
 	// überladene Methode
 		public static String c( String c ) {
 			switch ( c ) {
