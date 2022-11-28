@@ -2,9 +2,11 @@
  *  Literatur-Beispiel | 6 aus 49
  * 
  */
+
 package com.cc.java;
 import java.util.Random;
 import java.util.Arrays;
+
 public class App {
 
 	public static void main(String[] args) {
@@ -61,23 +63,23 @@ public class App {
 		private static void output( char outChar ) {
 			System.out.print( outChar );
 		}
-	// color function
+	// überladene Methode
 		public static String c( String c ) {
-        switch ( c ) {
-            case "#r":
-                return "\u001b[31m";
-            case "#g":
-                return "\u001b[32m";
-            case "#y":
-                return "\u001b[33m";
-            case "#b":
-                return "\u001b[34m";
-            case "#p":
-                return "\u001b[35m";
-            case "#c":
-                return "\u001b[36m";
-            default:
-                return "\u001b[0m";
-        }
-	}
+			switch ( c ) {
+				case "#r":
+					return "\u001b[31m";
+				case "#g":
+					return "\u001b[32m";
+				case "#y":
+					return "\u001b[33m";
+				case "#b":
+					return "\u001b[34m";
+				case "#p":
+					return "\u001b[35m";
+				case "#c":
+					return "\u001b[36m";
+				default:
+					return "\u001b[0m";
+			}
+		}
 }
